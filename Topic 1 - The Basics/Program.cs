@@ -22,6 +22,36 @@
 
             string greeting = "    Hello World    ";
             Console.WriteLine($"[{greeting}]");
+
+            string trimmedGreeting = greeting.TrimStart();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+            trimmedGreeting = greeting.TrimEnd();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+            trimmedGreeting = greeting.Trim();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+            string sayHello = "Hello World";
+            Console.WriteLine(sayHello);
+            sayHello = sayHello.Replace("Hello", "Greetings");
+            Console.WriteLine(sayHello);
+
+            Console.WriteLine(sayHello.ToUpper());
+            Console.WriteLine(sayHello.ToLower());
+
+            string songLyrics = "You say goodbye, and I say Hello";
+            Console.WriteLine(songLyrics.Contains("goodbye"));
+            Console.WriteLine(songLyrics.Contains("greetings"));
+
+            //Microsoft Challenge Below
+
+            string songLyrics1 = "You say goodbye, and I say Hello";
+            Console.WriteLine(songLyrics1.StartsWith("You"));
+            Console.WriteLine(songLyrics1.StartsWith("Goodbye"));
+
+            Console.WriteLine(songLyrics1.EndsWith("Hello"));
+            Console.WriteLine(songLyrics1.EndsWith("Goodbye"));
         }
     }
 }
